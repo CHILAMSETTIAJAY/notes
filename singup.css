@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --gray-dark: #343a40;
+    --dark: #343a40;
+    --font-family--1: 'EB Garamond', serif;
+    --font-family--2: 'Playfair Display', serif;
+    --font-family--3: 'Crimson Text', serif;
+
+
+}
+a{
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: var(--font-family--3);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-page{
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+} 
+.logo{
+    position: relative;
+    top: -60px;
+}
+.welcome-text{
+    width: 100%;
+    flex: 0.4;
+    /* background-color: green; */
+    flex-direction: column;
+}
+.welcome-text h4{
+    position: relative;
+    top: -20px;
+    letter-spacing: 0.5px;
+}
+.start-msg{
+    opacity: 0.6;
+    word-spacing: 1px;
+}
+.login-area{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between !important;
+    flex: 0.8;
+    /* background-color:mediumspringgreen ; */
+}
+.login-area p , .guset-area {
+    font-size: 13px;
+}
+.guset-area{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column ;
+    flex: 1;
+    padding-top:10px ;
+    color: black !important;
+}
+.guset-con{
+    align-items: center;
+}
+.guset-area a{
+    color: black !important;
+}
+.msg{
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    opacity: 0.4;
+}
+.login-btn a{
+    color: #fff;
+    font-family: var(--font-family--1);
+    letter-spacing: 1px;
+}
+.login-btn {
+    padding: 8px 70px;
+    background-color:var(--gray-dark); /* Add a background color for better visibility */
+    color: #fff !important;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.login-info{
+    gap: 5px;
+}
+/* Hover effect for the login button */
+.login-btn:hover {
+    background-color: var(--dark);
+}
+.mail{
+    width: 60%;
+    padding: 8px 25px;
+}

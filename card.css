@@ -1,0 +1,139 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background: #f6f9fc;
+    color: #212121;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    min-height: 100%;
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  .section-header {
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+  }
+  .section-header h1 {
+    color: #212121;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 36px;
+    padding: 0 0 24px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  #micro-slider{
+    width: 100%;
+    padding-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+  }
+  a,
+  a:link,
+  a:visited {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .micro-slider {
+    height: 210px;
+    /* margin: 10px 0; */
+    position: relative;
+    width: 100%;
+  }
+  .micro-slider.fullwidth {
+    height: 480px;
+    /* margin: 64px 0; */
+  }
+  .micro-slider.fullwidth .slider-item {
+    height: 480px;
+    line-height: 480px;
+    width: 100%;
+  }
+  .slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: 0 50%;
+  }
+  .slider-item {
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+    color: #fff;
+    display: none;
+    border-radius: 10px 0px 10px 0px;
+    font-size: 12px;
+    height: 200px;
+    line-height: 320px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 150px;
+    cursor: pointer;
+  }
+  /*
+  .slider-item:not(.active) {cursor: pointer;}
+  */
+  .indicators {
+    bottom: -10px;
+    left: 36%;
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+  }
+  .indicators li {
+    color: #fff;
+    float: left;
+    height: 5px;
+    text-align: center;
+    width: 16px;
+  }
+  .indicators li:last-child {
+    margin: 0;
+  }
+  .indicators a {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e6e9ec;
+    color: #fff;
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+  }
+  .indicators .active a {
+    background: #e6e9ec;
+  }
+  .s1 {
+    background: #3f51b5;
+  }
+  .s2 {
+    background: #448aff;
+  }
+  .s3 {
+    background: #03a9f4;
+  }
+  .s4 {
+    background: #00bcd4;
+  }
+  .s5 {
+    background: #009688;
+  }
+  .s6 {
+    background: #4caf50;
+  }
+  
