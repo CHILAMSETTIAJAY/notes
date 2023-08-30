@@ -60,9 +60,13 @@ body {
 }
 #section4 .question{
   font-family: var(--font-family--3);
+  font-size: 16px;
 }
 #section2 P,h1 , .singup-btn #section6 a {
   font-family: var(--font-family--3);
+}
+#section2 P{
+  font-size: 16px;
 }
 #section2 .guest-msg {
   font-size: 13px;
@@ -166,7 +170,7 @@ i{
 }
 .course-availability p {
     padding: 0px 26px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .course-container{
@@ -186,6 +190,7 @@ i{
   .faq-section h2{
     text-align: center;
     margin-bottom: 20px;
+    font-size: 22px;
   }
   .faq-item {
     border: 1px solid #ccc;
