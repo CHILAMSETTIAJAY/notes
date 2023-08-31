@@ -3,33 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="singup.css">
 </head>
 <body class="flex">
     <div class="login-page flex">
         <div class="welcome-text flex">
-            <h4>​​​Welcome to CodingBat Tech Inc!</h4>
+            <h4>Welcome to CodingBat Tech Inc!</h4>
             <h6 class="start-msg">START WHEN YOU'RE READY</h6>
         </div>
         <div class="login-area flex">
-                <p>ENTER YOUR MAIL​</p>
-                <input type="email" placeholder="EMAIL_ID​​" class="mail">
-                <div class="login-info flex">
-                    <button class="login-btn">
-                        <a href="otp.html">​​​​​SUBMIT​​​​​​​​​​​​</a>
-                    </button>
-                </div>
+            <p>ENTER YOUR MAIL</p>
+            <input type="email" placeholder="EMAIL_ID" class="mail" id="email">
+            <div class="login-info flex">
+                <button class="login-btn" id="submitBtn">
+                    Submit
+                </button>
+            </div>
         </div>
         <div class="guset-area flex">  
             <div class="guset-con flex">
                 <p>CONTINUE AS</p>
-            <h4><a href="./index.html"> &nbsp;GUEST​ ?</a></h4>
+                <h4><a href="./index.html">GUEST</a></h4>
             </div>
             <div class="msg flex">
-                <p>Practice code and download notes. For free.​​​​​</p>
+                <p>Practice code and download notes. For free.</p>
             </div>
         </div>
     </div>
+
+    <script>
+        // JavaScript for handling email submission and sending a verification link
+        document.getElementById("submitBtn").addEventListener("click", function () {
+            // Get the user's email from the input field
+            const email = document.getElementById("email").value;
+
+            // Generate a unique token for verification (You can use your logic for this)
+            const token = generateVerificationToken();
+
+            // Send the verification link via a mock API (replace this with your server)
+            sendVerificationLink(email, token);
+        });
+
+        // Function to generate a unique verification token
+        function generateVerificationToken() {
+            // Implement your logic to generate a unique token here.
+            // For example, you can use a UUID generator library.
+            // Example:
+            // const uuid = require('uuid');
+            // return uuid.v4();
+        }
+
+        // Function to send the verification link via a mock API
+        function sendVerificationLink(email, token) {
+            // Simulate sending the verification link via an API (replace this with your server)
+            fetch('/api/send-verification-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email, token }),
+            })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Verification link sent successfully');
+                } else {
+                    console.error('Failed to send verification link');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
 </body>
 </html>

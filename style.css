@@ -265,15 +265,13 @@ i{
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
 }
-.footer .col ul li {
-  color:#999999 ;
-}
+
 .social ul li {
   display: inline-block;
   padding-right: 5px !important;
 }
 
-.footer .col ul li:hover {
+.footer .col ul li:hover , .footer .col ul li a:hover   {
   color: #ffffff;
   transition: 0.1s;
   -webkit-transition: 0.1s;
